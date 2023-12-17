@@ -1,0 +1,72 @@
+.btn1{
+    padding:20px;
+    border:2px solid hotpink;
+    border-radius: 20px;
+    text-align: center;
+}
+.want{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.btn2{
+    background-color: blue;
+    padding:20px;
+    border:none;
+}
+
+.btn3{
+    background-color:aqua;
+    padding:20px;
+    border:none;
+}
+.btn4{
+    background-color:red;
+    padding:20px;
+    border:none;
+}
+
+.docs{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.btn5{
+    background-color:hotpink;
+    padding:20px;
+    border:none;
+}
+
+.vk{
+    width:120px;
+    border-radius:30px;
+}
+
+.telegram{
+    width:90px;
+}
+.youtube{
+    width:120px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+
+}
