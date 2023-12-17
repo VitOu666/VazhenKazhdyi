@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.banner {
+  /* display: inline-flex; */
+  /* height: 70vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+img {
+  position: absolute;
+  left: 10px;
+  height: 70vh;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.text {
+  width: 40%;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.video {
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.block h1,
+.block p {
+  color: black;
+}
