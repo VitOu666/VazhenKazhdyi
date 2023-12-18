@@ -70,3 +70,8 @@ a{
     flex-direction: column;
 
 }
+
+.rights{
+    text-align: center;
+    font-size: 20px;
+}
