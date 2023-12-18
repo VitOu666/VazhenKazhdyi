@@ -1,24 +1,25 @@
 body {
-  display: block;
-  justify-content: center;
-}
-
-.text {
-  background-color: #ec1164;
-  color: #ffffff;
+  display: grid;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  display: grid;
-  place-items: center;
+  margin: 0;
 }
 
 .payment {
-  display: grid;
-  align-content: center;
-  position: relative;
-  top: 10vh;
-  left: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.picture {
+  width: 40vh;
+  height: 40vh;
+}
+
+.picture {
+  justify-content: flex-end;
+  width: 40%;
 }
 
 .button {
@@ -38,16 +39,14 @@ body {
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
-  width: 238px;
-  height: 60px;
+  width: 150px;
+  height: 30px;
   flex-shrink: 0;
   cursor: pointer;
   position: relative;
-  z-index: 100;
 }
 
 .bank-details {
   position: relative;
-  top: 10px;
-  left: 20px;
+  top: 20vh;
 }
