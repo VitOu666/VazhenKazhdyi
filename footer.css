@@ -47,6 +47,13 @@
     border:none;
 }
 
+.btn6{
+    padding:20px;
+    border:2px solid rgb(208, 168, 188);
+    border-radius: 20px;
+    text-align: center;
+    color:gray;
+}
 .vk{
     width:120px;
     border-radius:30px;
@@ -76,3 +83,22 @@ a{
     font-size:15px;
     margin-top: 50px;
 }
+
+.up{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media all and (max-width:800px){
+    .want{
+        display: flex;
+        flex-direction: column;
+        }
+    .social, .docs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    }
