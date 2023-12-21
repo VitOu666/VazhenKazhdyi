@@ -7,19 +7,15 @@ body {
 
 .payment {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.picture {
-  width: 40vh;
-  height: 40vh;
+.item {
+  width: 50vh;
+  height: 50vh;
 }
 
-.picture {
-  justify-content: flex-end;
-  width: 40%;
+.name {
+  font-size: 0.75em;
 }
 
 .button {
