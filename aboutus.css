@@ -179,6 +179,21 @@
 }
 
 
+/*МОБИЛЬНАЯ АДАПТАЦИЯ */
+
+@madia all and (max-width:800px){
+    .team{
+        font-size: 15px;
+        padding:10px;
+        justify-content:center;
+    }
+
+    .photos{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
 /*ФУТТЕР*/
 
 /* .footer{
