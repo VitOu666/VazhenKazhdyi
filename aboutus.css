@@ -1,47 +1,7 @@
-/* .photo{
-    width:250px;
-    height:300px;
-    margin-left:80px;
-    border:solid hotpink 3px;
-    padding:5px;
-}
-.photos{
-    display: flex;
-    padding:10px;
-    gap:20px;
-}
-.photos1{
-    display: flex;
-    padding:10px;
-    gap:20px;
-}
-
-.team{
-    display: flex;
-    justify-content: center;
-    margin-left: 300px;
-    align-self: center;
-}
-.team1{
-    text-decoration: none;
-    padding:30px;
-    background-color: hotpink;
-    border:solid 2px pink;
-    color: #fff;
-    border-radius: 15px;
-    font-size: 20px;
-   
-}
-
-.general{
-    display: flex;
-    
-} */
-
 .team{
     text-decoration: none;
     color: #fff;
-    background-color: hotpink;
+    background-color:#EC1164;
     border-radius: 15px;
     padding:30px;
     margin-top:30px;
@@ -68,7 +28,7 @@
 .team_voluntier{
     text-decoration: none;
     color: #fff;
-    background-color: rgb(229, 189, 203);
+    background-color: #4B7CEC;
     border-radius: 15px;
     padding:15px;
     margin-top:30px;
@@ -82,13 +42,13 @@
     width:250px;
     height:310px;
     border-radius: 5px;
-    border:3px solid hotpink;
+    border:3px solid #EC1164;
     padding:5px;
 }
 
 .about{
     border-radius: 5px;
-    border:2px solid hotpink;
+    border:2px solid #EC1164;
     width:260px;
     text-align: center;
 }
@@ -100,7 +60,7 @@
     width:250px;
     height:310px;
     border-radius: 5px;
-    border:3px solid hotpink;
+    border:3px solid #EC1164;
     padding:5px;
 }
 
@@ -126,9 +86,9 @@
 .stratagy_link{
     background-color: rgb(250, 247, 248);
     text-decoration: none;
-    color:hotpink;
+    color:#EC1164;
     border-radius: 15px;
-    border:5px solid hotpink;
+    border:5px solid #EC1164;
     padding:20px;
     margin-top:30px;
     text-align: center;
@@ -136,7 +96,7 @@
 }
 
 .stratagy_link:hover{
-    background-color: hotpink;
+    background-color: #4B7CEC;
     color:#fff;
     transition: 1s;
 }
@@ -144,14 +104,14 @@
 .diploma1{
     width:480px;
     height:350px;
-    border:3px solid hotpink;
+    border:3px solid #EC1164;
     border-radius: 5px;
     padding:5px;
 }
 .diploma2{
     width:450px;
     height:600px;
-    border:3px solid hotpink;
+    border:3px solid #EC1164;
     border-radius: 5px;
     padding:5px;
 }
@@ -169,9 +129,9 @@
 .ustav{
     background-color: rgb(250, 247, 248);
     text-decoration: none;
-    color:hotpink;
+    color:#4B7CEC;
     border-radius: 15px;
-    border:3px solid hotpink;
+    border:3px solid #4B7CEC;
     padding:10px;
     margin-top:30px;
     text-align: center;
