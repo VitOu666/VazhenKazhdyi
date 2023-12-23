@@ -15,7 +15,7 @@ body {
 }
 header {
     border-bottom: 3px;
-    border-color: palevioletred;
+    border-color:#EC1164;
     background-color: #ffffff;
     box-shadow: 0px 0px 20px 0px rgba(6, 4, 4, 0.616);
     display: flex;
@@ -27,38 +27,47 @@ header {
 .LogoSection img {
     max-width: 8vw;
     padding: 1vw;
-    margin-left: 3vw;
+    margin-left: 1vw;
 } 
-.topnav_link {
-    border-color: rgb(35, 25, 25);
-    border: 3px;
-    margin: 5px;
-    padding: 0px;
-    background-color: rgba(47, 120, 255, 0.185);
-    font-weight: 800;
+.topnav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
-.dropbtn {
-    padding-top: 3vw;
-    width: 3vw;
+.topnav_link {
+    padding: 5px;
+    background-color: rgba(47, 120, 255, 0.185);
+    align-items: center;
+    text-align: center;
+    height: 3vw;
+}
+.topnav_link a {
+    font-size: 16px;
+    font-family: 'MullerLight';
+    font-weight: 600;
+}
+a:active {
+    font-family: 'MullerBold';
 }
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 3vw;
-    margin-left: auto;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(217, 229, 253);
-    min-width: 20vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 .dropdown-content a {
     color: black;
     font-family: 'MullerLight';
-    padding: 1vw 2vw;
+    font-size: 16px;
+    padding: 1vw 1vw;
     text-decoration: none;
     display: block;
 }
@@ -79,20 +88,21 @@ header {
     font-family: 'MullerBlack';
     text-transform: uppercase;
     font-size: 18px;
+    margin-right: 1vw;
 }
-.RightSection {
+.phone {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
 }
-.RightSection p {
+.phone p {
     font-family: 'MullerBold';
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
 }
-.RightSection img {
+.phone img {
     max-width: 25px;
 }
 .ButtonSection {
@@ -101,32 +111,68 @@ header {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    margin-right: 3vw;
+    margin-right: 1vw;
 }
+@media screen and (min-width: 601px) {
+    #header_mob {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    #header_full {
+        display: none;
+    }
+    header {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .LogoSection img {
+        max-width: 20vw;
+        padding: 1vw;
+        margin-left: 0vw;
+    }
+    .topnav_link {
+        height: 6vw;
+        text-align: start;
+    }
+    .topnav_link a {
+        font-size: 14px;
+    }
+    .dropdown {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 20vw;
+    }
+    .dropbtn img {
+        width: 5vw;
+    }
+    .dropdown-content a {
+        font-size: 14px;
+    }
+    .dropdown-content a:hover {background-color: rgba(47, 120, 255, 0.185);}
+    
+    .dropdown:hover .dropdown-content {display: flex; flex-direction: column; margin-top: 150vw;}
+    
+    .dropdown:hover .dropbtn {background-color: #ffffff;}
+    
     .ButtonHelp {
-    width: 100px;
-    height: 20px;
-    font-size: 9px;
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+        margin-right: 0vw;
     }
-    .RightSection p {
-        font-family: 'MullerBold';
-        font-weight: 500;
-        font-size: 8px;
+    .phone p {
+        font-size: 12px;
     }
-    .RightSection img {
-        max-width: 12px;
+    .phone img {
+        max-width: 20px;
     }
     .ButtonSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 4px;
-        margin-right: 1vw;
-    }
-    .dropbtn {
-        padding-top: 3vw;
-        width: 5vw;
+        margin-right: 0;
+        padding-top: 5px;
+        margin-left: 5vw;
     }
 }
