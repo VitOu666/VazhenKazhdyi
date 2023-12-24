@@ -6,7 +6,7 @@ main {
 
 .container {
   display: flex;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .quote,
@@ -18,7 +18,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: start;
+  align-items: center;
 }
 
 .item {
@@ -36,22 +36,24 @@ main {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
+  margin-top: 30px;
 }
 
 .qr_button {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .item_qr {
   width: 70vh;
   height: 70vh;
+  align-items: start;
 }
 
 .p {
   margin-top: 15px;
   font-size: 1.25em;
+  text-align: center;
 }
 
 .name {
@@ -61,7 +63,6 @@ main {
 .button {
   padding: 11px 30px;
   margin: 50px;
-  margin-left: 50px;
   border-radius: 35px;
   border: none;
   background: #ec1164;
@@ -72,6 +73,8 @@ main {
   width: 130px;
   cursor: pointer;
   text-align: center;
+  margin-left: 170px;
+  margin-bottom: 20px;
 }
 
 .bank-details {
