@@ -1,48 +1,80 @@
-body {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+main {
+  margin-left: 20px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.payment {
+.container {
   display: flex;
+  margin-top: 50px;
+}
+
+.quote,
+.qr_button {
+  flex: 1;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
 }
 
 .item {
-  width: 50vh;
-  height: 50vh;
+  width: 70vh;
+  height: 20vh;
+  margin-right: 50px;
+}
+
+.item p {
+  font-size: 1.25em;
+}
+
+.image {
+  width: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.qr_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item_qr {
+  width: 70vh;
+  height: 70vh;
+}
+
+.p {
+  margin-top: 15px;
+  font-size: 1.25em;
 }
 
 .name {
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 .button {
-  display: inline-flex;
   padding: 11px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 50px;
+  margin: 50px;
+  margin-left: 50px;
   border-radius: 35px;
   border: none;
   background: #ec1164;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #ffffff;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+  font-weight: 700;
   text-transform: uppercase;
-  width: 150px;
-  height: 30px;
-  flex-shrink: 0;
+  width: 130px;
   cursor: pointer;
-  position: relative;
+  text-align: center;
 }
 
 .bank-details {
-  position: relative;
-  top: 20vh;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }

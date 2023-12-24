@@ -1,0 +1,129 @@
+@font-face {
+    font-family: MullerBold;
+    src: url(./assets/fonts/MullerBold.woff);
+}
+@font-face {
+    font-family: MullerLight;
+    src: url(./assets/fonts/MullerLight.woff);
+}
+@font-face {
+    font-family: MullerBlack;
+    src: url(./assets/fonts/MullerBlack.woff);
+}
+body {
+    margin: 0px;
+}
+header {
+    border-bottom: 3px;
+    border-color: palevioletred;
+    box-shadow: 0px 0px 20px 0px rgba(6, 4, 4, 0.616);
+    display: flex;
+    flex-direction: row;
+}
+/* Header Option1 */
+.LogoSection img {
+    max-width: 8vw;
+    padding: 1vw;
+    margin-left: 3vw;
+} 
+.topnav_link {
+    border-color: rgb(35, 25, 25);
+    border: 3px;
+    margin: 5px;
+    padding: 0px;
+    background-color: rgba(47, 120, 255, 0.185);
+    font-weight: 800;
+}
+.dropbtn {
+    padding-top: 3vw;
+    width: 3vw;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 3vw;
+    margin-left: auto;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(217, 229, 253);
+    min-width: 20vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    font-family: 'MullerLight';
+    padding: 1vw 2vw;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: rgba(47, 120, 255, 0.185);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ffffff;}
+
+.ButtonHelp {
+    border-radius: 35px;
+    border-style: none;
+    background: #EC1164;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-family: 'MullerBlack';
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.RightSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.RightSection p {
+    font-family: 'MullerBold';
+    font-weight: 500;
+    font-size: 12px;
+}
+.RightSection img {
+    max-width: 25px;
+}
+.ButtonSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-right: 3vw;
+}
+@media screen and (max-width: 600px) {
+    .ButtonHelp {
+    width: 100px;
+    height: 20px;
+    font-size: 9px;
+    }
+    .RightSection p {
+        font-family: 'MullerBold';
+        font-weight: 500;
+        font-size: 8px;
+    }
+    .RightSection img {
+        max-width: 12px;
+    }
+    .ButtonSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4px;
+        margin-right: 1vw;
+    }
+    .dropbtn {
+        padding-top: 3vw;
+        width: 5vw;
+    }
+}
