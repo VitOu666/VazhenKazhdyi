@@ -11,14 +11,202 @@
     src: url(../assets/fonts/MullerBlack.woff);
 }
 
-p {
-    color: #444343;
-    font-family: 'MullerLight';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 50;
-    line-height: 80%;
+
+h2 {
+    color: black;
+    font-family: 'MullerBlack';
+    font-size: 24px;
+    font-weight: 500;
     text-transform: uppercase;
-    text-align: start;
-    margin-top: 10vw;
 }
+
+main {
+    margin: 5vw;
+} 
+
+.ward_vk img {
+    max-height: 10vw;
+    border-radius: 30px;
+}
+
+footer {
+    box-shadow: 0px -5px 10px 5px  rgba(6, 4, 4, 0.25);
+    width:auto;
+    background-color: white;
+}
+.btn1{
+    padding:15px;
+    border-radius: 35px;
+    background-color: #EC1164;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-family: 'MullerBlack';
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:3vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.main_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1vw;
+    height: 6vw;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1vw;
+}
+
+.btn2{
+    background-color: blue;
+    padding:20px;
+    border:none;
+}
+
+.btn3{
+    background-color:aqua;
+    padding:20px;
+    border:none;
+}
+.btn4{
+    background-color:red;
+    padding:20px;
+    border:none;
+}
+
+.docs{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    max-height: 4vw;
+}
+
+.btn5{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    color: rgb(103, 103, 103);
+    font-family: 'MullerBold';
+    text-align: center;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    text-decoration: underline;
+}
+
+.btn6{
+    padding: 2vw 1vw;
+    border:2px solid #4B7CEC;
+    border-radius: 20px;
+    text-align: center;
+    color:#000000;
+    font-family: 'MullerBold';
+    height: 3vw;
+}
+.vk{
+    max-height: 4vw;
+    border-radius:30px;
+}
+.telegram{
+    max-height: 4vw;
+}
+.youtube{
+    max-height: 4vw;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+.rights{
+    text-align: center;
+    font-family: 'MullerLight';
+    font-size: 12px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.up img {
+    max-height: 2vw;
+    color: #EC1164;
+}
+
+@media all and (max-width:600px) {
+    footer {
+        width: 100vw;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn1 {
+        padding:10px;
+        font-size: 12px;
+    }
+    .main_part {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vw;
+    gap: 1vw;
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+    .vk{
+        max-height: 8vw;
+        border-radius:30px;
+    }
+    .telegram{
+        max-height: 8vw;
+    }
+    .youtube{
+        max-height: 8vw;
+    }
+    .docs{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 5px;
+    }
+    .btn5{
+        padding: 3px 3px;
+        color: rgb(103, 103, 103);
+        font-family: 'MullerBold';
+        text-align: center;
+        font-size: 20px;
+        border: none;
+    }
+    .up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn6{
+        padding: 2vw 2vw;
+        border:2px solid #4B7CEC;
+        border-radius: 20px;
+        text-align: center;
+        color:#000000;
+        font-family: 'MullerBold';
+        height: 3vw;
+        font-size: 15px;
+    }
+    }
