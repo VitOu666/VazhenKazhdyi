@@ -1,14 +1,14 @@
 @font-face {
   font-family: "MullerBold";
-  src: url(./assets/fonts/MullerBold.woff);
+  src: url(../fonts/MullerBold.woff);
 }
 @font-face {
   font-family: "MullerLight";
-  src: url(./assets/fonts/MullerLight.woff);
+  src: url(../fonts/MullerLight.woff);
 }
 @font-face {
   font-family: "MullerBlack";
-  src: url(./assets/fonts/MullerBlack.woff);
+  src: url(../fonts/MullerBlack.woff);
 }
 
 body {
@@ -50,14 +50,14 @@ body {
 .block h1,
 .block p {
   color: black;
-  font-family: "MullerBlack";
+  font-family: "MullerLight";
 }
 
 footer {
   margin-top: 50px;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 600px) {
   .banner {
     height: auto;
     display: none;

@@ -1,14 +1,14 @@
 @font-face {
   font-family: "MullerBold";
-  src: url(./assets/fonts/MullerBold.woff);
-}
-@font-face {
-  font-family: "MullerLight";
-  src: url(./assets/fonts/MullerLight.woff);
+  src: url(../fonts/MullerBold.woff);
 }
 @font-face {
   font-family: "MullerBlack";
-  src: url(./assets/fonts/MullerBlack.woff);
+  src: url(../fonts/MullerBlack.woff);
+}
+@font-face {
+  font-family: "MullerLight";
+  src: url(../fonts/MullerLight.woff);
 }
 
 main {
@@ -65,7 +65,7 @@ main {
 }
 
 .p {
-  font-family: "MullerBlack";
+  font-family: "MullerLight";
   margin-top: 15px;
   font-size: 1.25em;
   text-align: center;
@@ -95,21 +95,21 @@ main {
 }
 
 .bank-details {
-  font-family: "MullerBlack";
+  font-family: "MullerLight";
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   main {
-    display: flex;
+    display: wrap;
     flex-direction: column;
     margin: 0 auto;
     width: 90%;
   }
 
   .container {
-    display: flex;
+    flex-wrap: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
