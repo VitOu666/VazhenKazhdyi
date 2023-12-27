@@ -348,6 +348,8 @@ a:active {
         .photos{
             display: flex;
             flex-wrap: wrap;
+            margin-left:75px;
+          
         }
         .team_voluntier{
             display:flex;
