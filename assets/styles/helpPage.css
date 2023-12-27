@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "MullerBold";
+  src: url(./assets/fonts/MullerBold.woff);
+}
+@font-face {
+  font-family: "MullerLight";
+  src: url(./assets/fonts/MullerLight.woff);
+}
+@font-face {
+  font-family: "MullerBlack";
+  src: url(./assets/fonts/MullerBlack.woff);
+}
+
 main {
   margin-left: 20px;
   max-width: 100%;
@@ -27,7 +40,8 @@ main {
   margin-right: 50px;
 }
 
-.item p {
+.zitata {
+  font-family: "MullerLight";
   font-size: 1.25em;
 }
 
@@ -51,16 +65,19 @@ main {
 }
 
 .p {
+  font-family: "MullerBlack";
   margin-top: 15px;
   font-size: 1.25em;
   text-align: center;
 }
 
 .name {
-  font-size: 1em;
+  font-family: "MullerBlack";
+  font-size: 14px;
 }
 
 .button {
+  font-family: "MullerBlack";
   padding: 11px 30px;
   margin: 50px;
   border-radius: 35px;
@@ -78,6 +95,44 @@ main {
 }
 
 .bank-details {
+  font-family: "MullerBlack";
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .quote,
+  .qr_button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .bank-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .button {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 70%;
+  }
 }
