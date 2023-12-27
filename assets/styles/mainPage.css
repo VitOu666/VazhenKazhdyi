@@ -15,6 +15,10 @@ body {
   margin: 0;
 }
 
+main {
+  overflow: scroll;
+}
+
 .banner {
   display: flex;
   justify-content: center;
