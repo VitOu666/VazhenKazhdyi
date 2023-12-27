@@ -261,10 +261,4 @@ a{
         display: flex;
         flex-direction: column;
         }
-    .social, .docs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
     }
