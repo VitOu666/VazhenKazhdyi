@@ -59,14 +59,20 @@ main {
 }
 
 .item_qr {
-  width: 70vh;
-  height: 70vh;
-  align-items: start;
+  display: flex;
+}
+
+.item_qr img {
+  display: flex;
+  width: 40vh;
+  height: 40vh;
+  margin-left: 10vw;
+  margin-top: 30vh;
 }
 
 .p {
   font-family: "MullerLight";
-  margin-top: 15px;
+  margin-top: 25px;
   font-size: 1.25em;
   text-align: center;
 }
@@ -77,6 +83,8 @@ main {
 }
 
 .button {
+  display: grid;
+  place-items: center;
   font-family: "MullerBlack";
   padding: 11px 30px;
   margin: 50px;
@@ -90,8 +98,8 @@ main {
   width: 130px;
   cursor: pointer;
   text-align: center;
-  margin-left: 170px;
-  margin-bottom: 20px;
+  margin-left: 15vw;
+  margin-bottom: 20vw;
 }
 
 .bank-details {
@@ -109,17 +117,49 @@ main {
   }
 
   .container {
-    flex-wrap: flex;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin: 0 auto;
+    width: 90%;
+  }
+
+  .item {
+    width: 50vh;
+    height: 20vh;
+    margin-right: 20px;
   }
 
   .quote,
   .qr_button {
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
+    margin: 2vw;
+  }
+
+  .item_qr {
+    margin: -2vw;
+  }
+
+  .item_qr img {
+    display: flex;
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .image img {
+    width: 70vw;
+    height: 70vw;
+    margin-left: 30vw;
+  }
+
+  .p {
+    font-family: "MullerLight";
+    font-size: 1.25em;
+    text-align: center;
+    margin-left: 23vw;
+    width: 90vw;
   }
 
   .bank-details {
@@ -132,7 +172,9 @@ main {
 
   .button {
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
+    margin-top: 3vw;
+    margin-left: -1vw;
     width: 70%;
   }
 }
