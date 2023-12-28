@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "MullerBold";
+  src: url(../fonts/MullerBold.woff);
+}
+@font-face {
+  font-family: "MullerBlack";
+  src: url(../fonts/MullerBlack.woff);
+}
+@font-face {
+  font-family: "MullerLight";
+  src: url(../fonts/MullerLight.woff);
+}
+
+main {
+  margin-left: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  display: flex;
+  margin-top: 70px;
+}
+
+.quote,
+.qr_button {
+  flex: 1;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item {
+  width: 70vh;
+  height: 20vh;
+  margin-right: 50px;
+}
+
+.zitata {
+  font-family: "MullerLight";
+  font-size: 1.25em;
+}
+
+.image {
+  width: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.qr_button {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_qr {
+  display: flex;
+}
+
+.item_qr img {
+  display: flex;
+  width: 40vh;
+  height: 40vh;
+  margin-left: 10vw;
+  margin-top: 30vh;
+}
+
+.p {
+  font-family: "MullerLight";
+  margin-top: 25px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.name {
+  font-family: "MullerBlack";
+  font-size: 14px;
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  font-family: "MullerBlack";
+  padding: 11px 30px;
+  margin: 50px;
+  border-radius: 35px;
+  border: none;
+  background: #ec1164;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 130px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 15vw;
+  margin-bottom: 20vw;
+}
+
+.bank-details {
+  font-family: "MullerLight";
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    display: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .item {
+    width: 50vh;
+    height: 20vh;
+    margin-right: 20px;
+  }
+
+  .quote,
+  .qr_button {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 2vw;
+  }
+
+  .item_qr {
+    margin: -2vw;
+  }
+
+  .item_qr img {
+    display: flex;
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .image img {
+    width: 70vw;
+    height: 70vw;
+    margin-left: 30vw;
+  }
+
+  .p {
+    font-family: "MullerLight";
+    font-size: 1.25em;
+    text-align: center;
+    margin-left: 23vw;
+    width: 90vw;
+  }
+
+  .bank-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .button {
+    margin: 0 auto;
+    margin-bottom: 2vw;
+    margin-top: 3vw;
+    margin-left: -1vw;
+    width: 70%;
+  }
+}

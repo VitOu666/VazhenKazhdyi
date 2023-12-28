@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "MullerBold";
+  src: url(../fonts/MullerBold.woff);
+}
+@font-face {
+  font-family: "MullerLight";
+  src: url(../fonts/MullerLight.woff);
+}
+@font-face {
+  font-family: "MullerBlack";
+  src: url(../fonts/MullerBlack.woff);
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  z-index: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.banner_main {
+  position: absolute;
+  left: auto;
+  height: 70vh;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.text {
+  width: 50%;
+  position: relative;
+  top: 15px;
+  margin-left: 100px;
+}
+
+.video {
+  display: flex;
+  width: 40%;
+}
+
+.block h1,
+.block p {
+  color: black;
+  font-family: "MullerLight";
+}
+
+footer {
+  margin-top: 50px;
+}
+
+@media all and (max-width: 600px) {
+  .banner {
+    height: auto;
+    display: none;
+  }
+
+  .banner_main {
+    position: static;
+    height: auto;
+  }
+
+  .block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .video {
+    width: 100%;
+  }
+}
