@@ -18,7 +18,9 @@ main p {
     display: flex;
 }
 .DariTeplo img {
-    width: 50vw;
+    max-height: 30vw;
+    width: auto;
+    margin-top: 6vw;
 }
 .DariTeplo div {
     margin: 5vw;
@@ -27,7 +29,8 @@ main p {
     display: flex;
 }
 .Dostavka img {
-    width: 50vw;
+    max-height: 30vw;
+    width: auto;
 }
 .Dostavka div {
     margin: 5vw;
@@ -71,8 +74,20 @@ main p {
     text-align: center;
     margin-bottom: 3vw;
 }
-
-
+.ButtonHelp {
+    text-decoration: none;
+    color: #EC1164;
+    background-color: white;
+    border:2px #EC1164 solid;
+    border-radius: 35px;
+    padding:15px;
+    margin-top:30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'MullerBlack';
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 /* Footer */
 footer {
@@ -192,12 +207,37 @@ a{
 }
 
 @media all and (max-width:600px) {
+    main h2 {
+        font-size: 20px;
+    }
+    .DariTeplo, .Dostavka{
+        display: flex;
+        flex-direction: column;
+    }
+    .DariTeplo img {
+        max-height: 60vw;
+    }
+    .Dostavka img {
+        max-height: 60vw;
+    }
     footer {
         width: 100vw;
+    }
+    .video img {
+        display: none;
+    }
+    .video iframe {
+        max-width: 70vw;
+    }
+    .ButtonHelp {
+        padding:10px;
     }
     .buttons {
         display: flex;
         flex-direction: column;
+    }
+    .Perspektivi h2 {
+        margin-left: 10vw;
     }
     .btn1 {
         padding:10px;
