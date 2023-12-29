@@ -1,68 +1,32 @@
 @font-face {
     font-family: MullerBold;
-    src: url(../assets/fonts/MullerBold.woff);
+    src: url(./assets/fonts/MullerBold.woff);
 }
 @font-face {
     font-family: MullerLight;
-    src: url(../assets/fonts/MullerLight.woff);
+    src: url(./assets/fonts/MullerLight.woff);
 }
 @font-face {
     font-family: MullerBlack;
-    src: url(../assets/fonts/MullerBlack.woff);
+    src: url(./assets/fonts/MullerBlack.woff);
 }
-
-
-main h2 {
-    color: black;
-    font-family: 'MullerBlack';
-    font-size: 24px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-top: 15vw;
+body {
+    margin: 0px;
 }
-
-main p {
-    color: black;
-    font-family: 'MullerLight';
-    font-size: 30px;    
-}
-
 main {
     margin: 5vw;
 }
-
-.btn_letter{
-        padding:15px;
-        border-radius: 35px;
-        background-color: #EC1164;
-        text-align: center;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        color: black;
-        font-family: 'MullerBold';
-        text-transform: uppercase;
-        font-size: 18px;
-        height: 4000vw;
+main h2 {
+    font-family:'MullerBlack';
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
-
-.become_partner img{
-    max-width: 4vw;
+main img {
+    max-width: 50vw;
     height: auto;
 }
-
-.partners {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5vw;
-    justify-content: center;
-}
-
-.img-partners {
-    max-height: 10vw;
-    width: auto;
-
-}
-
+/* Footer */
 footer {
     box-shadow: 0px -5px 10px 5px  rgba(6, 4, 4, 0.25);
     width:auto;
@@ -85,6 +49,7 @@ footer {
     gap:3vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
+    margin-top: 20px;
 }
 .main_part {
     display: flex;
@@ -181,28 +146,8 @@ a{
 
 @media all and (max-width:600px) {
     main h2 {
-        color: black;
-        font-family: 'MullerBlack';
         font-size: 20px;
-        font-weight: 500;
-        text-transform: uppercase;
-        margin-top: 15vw;
     }
-    
-    main p {
-        color: black;
-        font-family: 'MullerLight';
-        font-size: 18px;    
-    }
-    .btn_letter{
-            padding:10px;
-            font-size: 16px;
-    }
-    .partners {
-        gap: 2vw;
-    }
-    
-    
     footer {
         width: 100vw;
     }
