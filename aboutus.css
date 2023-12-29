@@ -13,358 +13,244 @@
 body {
     margin: 0px;
 }
-header {
-    border-bottom: 3px;
-    border-color:#EC1164;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 20px 0px rgba(6, 4, 4, 0.616);
-    display: flex;
-    flex-direction: row;
-    position: sticky;
-    top: 0;
-}
-/* Header Option1 */
-.LogoSection img {
-    max-width: 8vw;
-    padding: 1vw;
-    margin-left: 1vw;
-} 
 
-.topnav {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    margin-right: 2vw;
-    margin-left: 2vw;
-}
-
-.topnav_link {
-    padding: 5px;
-    background-color: rgba(47, 120, 255, 0.185);
-    align-items: center;
-    text-align: center;
-    height: 3vw;
-}
-.topnav_link a {
-    font-size: 16px;
-    font-family: 'MullerLight';
-    font-weight: 600;
-}
-
-a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #000;
-}
-a:active {
-    font-family: 'MullerBold';
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(217, 229, 253);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    font-family: 'MullerLight';
-    font-size: 16px;
-    padding: 1vw 1vw;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {background-color: rgba(47, 120, 255, 0.185);}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #ffffff;}
-
-.ButtonHelp {
-    border-radius: 35px;
-    border-style: none;
-    background: #EC1164;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 200px;
-    height: 40px;
-    color: white;
-    font-family: 'MullerBlack';
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-right: 1vw;
-}
-.phone {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-.phone p {
-    font-family: 'MullerBold';
+/*Начало страницы о нас */
+h2 {
+    font-family:'MullerBlack';
+    font-size: 24px;
     font-weight: 500;
-    font-size: 15px;
+    text-transform: uppercase;
 }
-.phone img {
-    max-width: 25px;
+h4 {
+    font-family:'MullerBold';
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
 }
-.ButtonSection {
+.team{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    margin-right: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
 }
-@media screen and (min-width: 601px) {
-    #header_mob {
-        display: none;
-    }
+.photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
-
-@media screen and (max-width: 600px) {
-    #header_full {
-        display: none;
-    }
-    header {
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-    }
-    .LogoSection img {
-        max-width: 20vw;
-        padding: 1vw;
-        margin-left: 0vw;
-    }
-    .topnav_link {
-        height: 6vw;
-        text-align: start;
-    }
-    .topnav_link a {
-        font-size: 14px;
-    }
-    .dropdown {
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin-left: 20vw;
-    }
-    .dropbtn img {
-        width: 5vw;
-    }
-    .dropdown-content a {
-        font-size: 14px;
-    }
-    .dropdown-content a:hover {background-color: rgba(47, 120, 255, 0.185);}
-    
-    .dropdown:hover .dropdown-content {display: flex; flex-direction: column; margin-top: 150vw;}
-    
-    .dropdown:hover .dropbtn {background-color: #ffffff;}
-    
-    .ButtonHelp {
-        width: 150px;
-        height: 30px;
-        font-size: 12px;
-        margin-right: 0vw;
-    }
-    .phone p {
-        font-size: 12px;
-    }
-    .phone img {
-        max-width: 20px;
-    }
-    .ButtonSection {
-        margin-right: 0;
-        padding-top: 5px;
-        margin-left: 5vw;
-    }
+.member {
+    max-width: 20vw;
 }
-
-
-/*Начало страницы о нас */
-.team{
-    text-decoration: none;
-    color: #fff;
-    background-color:#EC1164;
-    border-radius: 15px;
-    padding:30px;
-    margin-top:30px;
+.member p {
+    font-family: 'MullerLight';
+    font-size: 18px;
+    line-height: 1.3;
     text-align: center;
-    font-size: 25px;
-    border:none;
 }
-.names{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
+.member img {
+    max-height: 25vw;
+    width: auto;
+    border-radius: 5px;
+    border:3px solid #EC1164;
+    padding:5px;
 }
-
-.voluntier{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-}
-
-.team_voluntier:hover{
-    background-color: rgb(83, 204, 83);
-    transition: 1s;
-}
-
-.team_voluntier{
+.voluntier a {
     text-decoration: none;
     color: #fff;
     background-color: #4B7CEC;
-    border-radius: 15px;
+    border-radius: 35px;
     padding:15px;
     margin-top:30px;
     text-align: center;
     font-size: 20px;
-    
+    font-family: 'MullerBlack';
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-
-.person{
-    width:250px;
-    height:310px;
-    border-radius: 5px;
-    border:3px solid #EC1164;
-    padding:5px;
+.voluntier a:hover {
+    background-color: #245bdb;
+    box-shadow: none;
 }
-
-.about{
-    border-radius: 5px;
-    border:2px solid #EC1164;
-    width:260px;
+.strategy{
+    background-color: rgb(249, 240, 227);
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+    padding-bottom: 3vw;
+    padding-top: 1vw;
+}
+.strategy p {
+    font-family: 'MullerLight';
+    font-size: 18px;
+    line-height: 1.3;
     text-align: center;
 }
-.name{
+.strategy a{
+    text-decoration: none;
+    color: #EC1164;
+    background-color: white;
+    border:2px #EC1164 solid;
+    border-radius: 35px;
+    padding:15px;
+    margin-top:30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'MullerBlack';
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.strategy a:hover{
+    box-shadow: none;
+    background-color: #f3f4fd;
+}
+.reports {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reports p {
+    font-family: 'MullerLight';
     font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
 }
-
-.person1{
-    width:250px;
-    height:310px;
-    border-radius: 5px;
-    border:3px solid #EC1164;
-    padding:5px;
+.rewards h2 {
+    text-align: center;
 }
-
-.photos{
+.rewards div {
     display: flex;
     flex-direction: row;
-    gap:20px;
-    margin-top: 30px;
-    margin-left:150px;
-}
-
-.photos{
-    width:50%;
-}
-
-.stratagy{
-    width:1440px;
-    height:350px;
-    background-color: antiquewhite;
-}
-
-.stratagy_link{
-    background-color: rgb(250, 247, 248);
-    text-decoration: none;
-    color:#EC1164;
-    border-radius: 15px;
-    border:5px solid #EC1164;
-    padding:20px;
-    margin-top:30px;
-    text-align: center;
-    font-size: 25px;
-}
-
-.stratagy_link:hover{
-    background-color: #4B7CEC;
-    color:#fff;
-    transition: 1s;
-}
-
-.diploma1{
-    width:480px;
-    height:350px;
-    border:3px solid #EC1164;
-    border-radius: 5px;
-    padding:5px;
-}
-.diploma2{
-    width:450px;
-    height:600px;
-    border:3px solid #EC1164;
-    border-radius: 5px;
-    padding:5px;
-}
-
-.rewards, .our_docs{
-    display: flex;
-    flex-direction:row;
     flex-wrap: wrap;
-    gap:15px;
-    margin-top: 20px;
+    gap: 2vw;
     justify-content: center;
-
 }
-
+.reward_doc {
+    border:2px solid #EC1164;
+    border-radius: 5px;
+    padding:5px;
+    max-height: 30vw;
+    width: auto;
+}
+.our_docs h2 {
+    text-align: center;
+    margin-top: 5vw;
+}
+.our_docs div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+}
+.doc {
+    border:2px solid #EC1164;
+    border-radius: 5px;
+    padding:5px;
+    max-height: 30vw;
+    width: auto;
+}
 .ustav{
-    background-color: rgb(250, 247, 248);
+    background-color: rgb(249, 240, 227);
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+    padding-bottom: 3vw;
+    padding-top: 1vw;
+}
+.ustav a{
     text-decoration: none;
-    color:#4B7CEC;
-    border-radius: 15px;
-    border:3px solid #4B7CEC;
-    padding:10px;
+    color: #EC1164;
+    background-color: white;
+    border:2px #EC1164 solid;
+    border-radius: 35px;
+    padding:15px;
     margin-top:30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
+    font-family: 'MullerBlack';
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
-/* @media all and (max-width:800px){
-    .want{
-        display: flex;
-        flex-direction: column;
-        }
-    .social, .docs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
-    } */
+.ustav a:hover{
+    box-shadow: none;
+    background-color: #f3f4fd;
+}
 
     @media all and (max-width:600px){
+        h2 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 18px;
+        }
         .team{
-            font-size: 15px;
-            padding:20px;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            margin-top: 1vw;
         }
         .photos{
-            display: flex;
-            flex-wrap: wrap;
-            margin-left:75px;
-          
+            flex-direction: column;
+            gap: 1vw;
         }
-        .team_voluntier{
-            display:flex;
-            justify-content: center;
+        .member {
+            max-width: 65vw;
         }
-
-        .stratagy{
-            width:350px;
+        .member p {
+            font-size: 16px;
         }
-
-        .diploma1,
-        .diploma2{
-            width:350px;
-           
+        .member img {
+            max-height: 80vw;
+            width: auto;
         }
+        .voluntier a {
+            padding:10px;
+            font-size: 12px;
+        }
+        .strategy{
+            margin-top: 10vw;
+        }
+        .strategy p {
+            font-size: 16px;
+        }
+        .strategy a{
+            padding:10px;
+            margin-top:2vw;
+            font-size: 12px;
+        }
+        .reports p {
+            font-size: 16px;
+        }
+        .rewards div {
+            flex-direction: column;
+            gap: 1vw;
+            align-items: center;
+        }
+        .reward_doc {
+            max-width: fit-content;
+            height: auto;
+        }
+        .our_docs div {
+            flex-direction: column;
+            gap: 1vw;
+            align-items: center;
+        }
+        .doc {
+            max-width: fit-content;
+            height: auto;
+        }
+        .ustav a{
+            padding:10px;
+            margin-top:2vw;
+            font-size: 12px;
+        }
+        
     }
 
     /*Конец кода О нас */

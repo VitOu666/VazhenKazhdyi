@@ -11,12 +11,7 @@
   src: url(../fonts/MullerBlack.woff);
 }
 
-body {
-  margin: 0;
-}
-
 main {
-  z-index: 0;
   margin-bottom: 5vw;
 }
 
@@ -28,7 +23,6 @@ main {
 }
 
 .banner_main {
-  position: absolute;
   left: auto;
   height: 70vh;
 }
@@ -42,7 +36,6 @@ main {
 
 .text {
   width: 50%;
-  position: relative;
   top: 15px;
   margin-left: 100px;
 }
@@ -62,13 +55,16 @@ h1 {
 
 
 @media all and (max-width: 600px) {
+  main {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
   .banner {
     height: auto;
     display: none;
   }
 
   .banner_main {
-    position: static;
     height: auto;
   }
 
@@ -180,7 +176,7 @@ footer {
 .youtube{
   max-height: 4vw;
 }
-a{
+footer a{
   text-decoration: none;
   font-size: 20px;
   color: #000;
